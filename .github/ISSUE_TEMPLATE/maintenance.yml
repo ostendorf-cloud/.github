@@ -1,0 +1,43 @@
+name: Maintenance
+description: dependencies, cleanup, refactoring, code rework
+title: ":bookmark: "
+# labels: ["issue-type: maintenance", "issue-status: triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for opening a **maintenance** issue! Please fill out the sections below to help us understand your request.
+        
+        Please note that issues are reserved for feature requests and bug reports. If you have a question or need help, please visit the [GitHub Discussions](about:blank).
+  - type: input
+    id: part
+    attributes:
+      label: Part of the project
+      description: What part of the project needs maintenance?
+      placeholder: Enter the part of the project that needs maintenance.
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the maintenance need.
+      placeholder: Enter a description of the needed maintenance. Please be as clear and concise as possible.
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason
+      description: Why is this maintenance needed?
+      placeholder: Enter a reason for the needed maintenance.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](about:blank).
+      options:
+        - label: I agree to the Code of Conduct
+          required: true
